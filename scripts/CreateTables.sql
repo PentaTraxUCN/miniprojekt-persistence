@@ -1,3 +1,5 @@
+USE DMA-CSD-V221_10434665;
+
 /* Create Customer tables */
 /* Create Customer */
 CREATE TABLE Customer(
@@ -19,7 +21,7 @@ CREATE TABLE Private(
 )
 
 /* Create Club with FK to Customer */
-CREATE TABLE Private(
+CREATE TABLE Club(
     phoneNo nvarchar(20) NOT NULL,
     discount float NOT NULL,
     CONSTRAINT PK_Private PRIMARY KEY (phoneNo),
